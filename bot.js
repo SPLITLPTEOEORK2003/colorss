@@ -5,7 +5,7 @@ client.on('ready',  () => {
   console.log('By:M7md');
 });
 
-var prefix = 'البريفكس (:';
+var prefix = '.';
 
 client.on('message', message => {
     if(message.content === prefix + 'createcolors') {
@@ -2336,4 +2336,4 @@ client.on('message', message => {
 
 
 
-	client.login('توكن بوتك');
+	client.login(process.env.BOT_TOKEN);
